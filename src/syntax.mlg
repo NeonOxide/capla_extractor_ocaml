@@ -1,0 +1,11 @@
+DECLARE PLUGIN "rocq_capla_extractor.plugin"
+{
+open Stdarg
+}
+
+VERNAC COMMAND EXTEND CaplaExtract CLASSIFIED AS SIDEFF
+| [ "CaplaExtract" "[" ne_string_list(files) "]" "PREFIX" string(prefix) "OUTPUT_DIR" string(output_dir) "OUTPUT_NAME" string(output_name) ] -> {
+                                                                                                       let msg = Rocq_capla_extractor.capla_extract files prefix output_dir output_name in
+                                                                                                       Feedback.msg_notice (Pp.str msg)
+                                                                                                       }
+END

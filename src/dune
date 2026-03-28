@@ -1,0 +1,13 @@
+(library
+ (name capla_extractor_plugin)
+ (public_name rocq_capla_extractor.plugin)
+ (synopsis "Capla Extractor Rocq Plugin")
+ (flags :standard -rectypes -w -27)
+ (wrapped false)
+ (libraries rocq-runtime.vernac
+    rocq_capla_extractor.capla_extractor
+    threads
+ ))
+
+(rocq.pp
+ (modules syntax))

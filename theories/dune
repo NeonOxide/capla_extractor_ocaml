@@ -1,0 +1,4 @@
+(rocq.theory
+ (name CaplaExtractor)
+ (package rocq_capla_extractor)
+ (plugins rocq_capla_extractor.plugin))
