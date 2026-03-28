@@ -1,0 +1,3 @@
+[submodule "src/capla_extractor"]
+	path = src/capla_extractor
+	url = https://github.com/NeonOxide/capla_extractor
