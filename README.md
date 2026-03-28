@@ -19,7 +19,7 @@ or
 opam switch create your_switch_name 5.4.1
 ```
 
-Then install the package:
+Then install the package (note that capla extractor is a Rust project and it requires Cargo to compile):
 
 ```bash
 opam install .
